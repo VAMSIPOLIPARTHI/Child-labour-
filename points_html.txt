@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Points Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="points-container">
+    <h2>Your Points</h2>
+    <p id="userPoints">Loading...</p>
+  </div>
+
+  <script src="points.js"></script>
+</body>
+</html>

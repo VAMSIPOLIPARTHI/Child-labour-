@@ -1,0 +1,31 @@
+/* Basic styles for form container */
+.form-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  /* Styles for form elements */
+  input[type="email"],
+  input[type="password"],
+  button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styles for hiding/showing forms */
+  #signupForm {
+    display: none;
+  }
+    

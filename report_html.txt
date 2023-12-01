@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit Report</title>
+  <link rel="stylesheet" type="text/css" href="report.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Child Labor Incident Report</h1>
+    <form id="incidentReportForm">
+      <!-- Incident Details -->
+      <h2>1. Incident Details</h2>
+      <label>Date:</label>
+      <input type="date" id="incidentDate" required><br>
+      <label>Time:</label>
+      <input type="time" id="incidentTime" required><br>
+      <label>Location:</label>
+      <input type="text" id="incidentLocation" placeholder="Specific location" required><br>
+      <label>Description of Incident:</label>
+      <textarea id="incidentDescription" placeholder="Details of observed child labor" rows="4" required></textarea><br>
+      <label>Type of Work:</label>
+      <input type="text" id="typeOfWork" placeholder="Type of work child was involved in" required><br>
+
+      <!-- Child Information -->
+      <h2>2. Child Information</h2>
+      <label>Age:</label>
+      <input type="number" id="childAge" required><br>
+      <label>Gender:</label>
+      <select id="childGender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="both">Both</option>
+      </select><br>
+      <label>Number of Children Involved:</label>
+      <input type="number" id="numberOfChildren" required><br>
+
+      <!-- Evidence and Documentation -->
+      <h2>3. Evidence and Documentation</h2>
+      <label>Upload Photographs/Videos:</label>
+      <input type="file" id="mediaFiles" accept="image/*, video/*" multiple required><br>
+      <label>Witness Statements:</label>
+      <textarea id="witnessStatements" placeholder="Witness statements, if available" rows="4"></textarea><br>
+
+      <!-- Reporting Person Information -->
+      <h2>4. Reporting Person Information</h2>
+      <label>Your Name:</label>
+      <input type="text" id="reporterName" placeholder="Your name" required><br>
+      <label>Email:</label>
+      <input type="email" id="reporterEmail" placeholder="Your email" required><br>
+      <label>Phone Number:</label>
+      <input type="tel" id="reporterPhone" placeholder="Your phone number" required><br>
+      <label>Relationship to Incident:</label>
+      <input type="text" id="relationshipToIncident" placeholder="Your relationship to the incident" required><br>
+
+      <!-- Other sections... -->
+
+      <input type="submit" value="Submit">
+      <script src="report.js"></script>
+
+    </form>
+  </div>
+</body>
+</html>

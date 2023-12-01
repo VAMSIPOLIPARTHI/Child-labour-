@@ -1,0 +1,80 @@
+/* Basic reset and body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Form container styles */
+  .form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form header styles */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Section heading styles */
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  /* Label and input styles */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select,
+  input[type="file"],
+  input[type="submit"] {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Adjust the border-radius for rounded corners */
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional: Styling for required fields */
+  input:required,
+  textarea:required,
+  select:required {
+    border-color: #dc3545;
+  }
+  
+  input:required:focus,
+  textarea:required:focus,
+  select:required:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 3px #dc3545;
+  }
